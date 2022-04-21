@@ -1,0 +1,199 @@
+@import "utilities/variables";
+
+header{
+    h1{
+        background-color: $color-principal;
+        color: white;
+        font-size: 12px;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 8px;
+        opacity: 40%;
+    }
+    .encabezadoLogo{
+        height: 150px;
+        margin: $margin-principal;
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 0.5fr;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas: "inputBuscar imgLogo sesion";
+
+        form{
+            color: $color-secundario;
+            display: inline-block; 
+            
+
+            .inputBuscar{
+                grid-area: inputBuscar;
+                border-bottom: 1px solid black;
+
+                input{
+                    border: none;
+                    color: #C4C4C4;
+                    height: 25px;
+                }
+            }
+        }
+
+        div{
+            .imgLogo{
+                grid-area: imgLogo;
+                height: 80px;
+                text-align: center;
+                transition: 2s;
+                &:hover{
+                    transform: scale(1.02);
+                }
+            }
+        }
+
+        .sesion{
+            width: 200px;
+            grid-area: sesion;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .crearCuenta{
+                color: $color-secundario;
+                font-size: 10px;
+                text-transform: uppercase;
+            }
+
+            .sesionVole{
+                color: $color-secundario;
+                font-size: 10px;
+                text-transform: uppercase;
+                margin-left: 5px;    
+            }
+
+            img{
+                margin-left: 6px;
+            }  
+        }
+    }
+}
+
+nav{
+    .menuNav{
+        ul{
+            li{
+                color: $color-secundario;
+                font-size: 15px;
+                text-transform: uppercase;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            
+            .navProd{
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+            }
+        }
+    }
+}
+
+.mainProd{
+    height: 2500px;
+    .prodPortada{
+        img{
+            width: 100%;
+        }
+    }
+
+    .productosVole{
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;  
+        div{
+            border: 1px solid $color-principal;
+            box-shadow: 0px 5px 10px grey;
+            margin-top: 40px;
+        }
+        img{
+            height: 400px;
+            transition: 1s;
+            &:hover{
+                transform: scale(1.02);
+            }
+        }
+        h2{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 15px;
+            color: $color-principal;
+            text-transform: uppercase;
+            transition: 1s;
+        }
+    }
+}
+
+.footerVole{
+    text-align: center;
+    padding-top: 25px;
+    background-color: $color-principal;
+    color: white;
+    height: 200px;
+    margin: 0px;
+    
+    div{
+        .navFooter{
+            h2{
+                text-transform: uppercase;
+                font-size: 16px;
+            }
+            ul{
+                padding: 0px;
+                li {
+                    list-style: none; 
+                    a{
+                        font-size: 12px;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        color: white;
+                    }  
+                }
+            }
+        }
+        .navContac{
+            h2{
+                text-transform: uppercase;
+                font-size: 16px;
+            }
+            ul{
+                padding: 0px;
+                li{
+                    font-size: 12px;
+                    list-style: none;
+                    text-transform: none;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: white;
+                    height: 25px;
+                }
+            }
+        }
+        .navRedes{
+            padding-right: 0px;
+            h2{
+                text-transform: uppercase;
+                font-size: 16px;
+            }
+            div{
+                h3{
+                    margin-top: 25px;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                }
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

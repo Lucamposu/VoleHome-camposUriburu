@@ -1,0 +1,135 @@
+header h1 {
+  background-color: #C1B0A0;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 8px;
+  opacity: 40%; }
+
+header .encabezadoLogo {
+  height: 150px;
+  margin: 0px 0px 80px 80px;
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: "inputBuscar imgLogo sesion"; }
+  header .encabezadoLogo form {
+    color: #C4C4C4;
+    display: inline-block; }
+    header .encabezadoLogo form .inputBuscar {
+      grid-area: inputBuscar;
+      border-bottom: 1px solid black; }
+      header .encabezadoLogo form .inputBuscar input {
+        border: none;
+        color: #C4C4C4;
+        height: 25px; }
+  header .encabezadoLogo div .imgLogo {
+    grid-area: imgLogo;
+    height: 80px;
+    text-align: center;
+    transition: 2s; }
+    header .encabezadoLogo div .imgLogo:hover {
+      transform: scale(1.02); }
+  header .encabezadoLogo .sesion {
+    width: 200px;
+    grid-area: sesion;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    header .encabezadoLogo .sesion .crearCuenta {
+      color: #C4C4C4;
+      font-size: 10px;
+      text-transform: uppercase; }
+    header .encabezadoLogo .sesion .sesionVole {
+      color: #C4C4C4;
+      font-size: 10px;
+      text-transform: uppercase;
+      margin-left: 5px; }
+    header .encabezadoLogo .sesion img {
+      margin-left: 6px; }
+
+nav .menuNav ul li {
+  color: #C4C4C4;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+nav .menuNav ul .navProd {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black; }
+
+.mainProd {
+  height: 2500px; }
+  .mainProd .prodPortada img {
+    width: 100%; }
+  .mainProd .productosVole {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .mainProd .productosVole div {
+      border: 1px solid #C1B0A0;
+      box-shadow: 0px 5px 10px grey;
+      margin-top: 40px; }
+    .mainProd .productosVole img {
+      height: 400px;
+      transition: 1s; }
+      .mainProd .productosVole img:hover {
+        transform: scale(1.02); }
+    .mainProd .productosVole h2 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-align: center;
+      font-size: 15px;
+      color: #C1B0A0;
+      text-transform: uppercase;
+      transition: 1s; }
+
+.footerVole {
+  text-align: center;
+  padding-top: 25px;
+  background-color: #C1B0A0;
+  color: white;
+  height: 200px;
+  margin: 0px; }
+  .footerVole div .navFooter h2 {
+    text-transform: uppercase;
+    font-size: 16px; }
+  .footerVole div .navFooter ul {
+    padding: 0px; }
+    .footerVole div .navFooter ul li {
+      list-style: none; }
+      .footerVole div .navFooter ul li a {
+        font-size: 12px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white; }
+  .footerVole div .navContac h2 {
+    text-transform: uppercase;
+    font-size: 16px; }
+  .footerVole div .navContac ul {
+    padding: 0px; }
+    .footerVole div .navContac ul li {
+      font-size: 12px;
+      list-style: none;
+      text-transform: none;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white;
+      height: 25px; }
+  .footerVole div .navRedes {
+    padding-right: 0px; }
+    .footerVole div .navRedes h2 {
+      text-transform: uppercase;
+      font-size: 16px; }
+    .footerVole div .navRedes div h3 {
+      margin-top: 25px;
+      text-transform: uppercase;
+      font-size: 16px; }
+    .footerVole div .navRedes div a {
+      color: white;
+      text-decoration: none;
+      font-size: 12px; }
