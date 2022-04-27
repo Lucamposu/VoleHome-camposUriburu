@@ -1,0 +1,51 @@
+$color-principal: #C1B0A0;
+$color-secundario: #C4C4C4;
+$margin-principal: 0px 80px;
+$fuente-principal: 'Urbanist', sans-serif;
+$fontsize-princ: 15px;
+
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+@mixin flex2{
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin grid{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+%border{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+
+
+%label{
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+%input{
+    width: 400px;
+    height: 30px;
+    background-color: $color-principal;
+}
+
+
+
+$standar: (
+    transform-standar: uppercase,
+    align-standar: center,
+    decoration-standar: none,
+);
+
+
