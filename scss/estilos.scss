@@ -132,21 +132,20 @@ main{
 
     .beneVole{
         @include flex2;
-        margin-top: 50px;
-        margin-bottom: 100px;
+        margin-top: 60px;
+        margin-bottom: 60px;
         color: $color-principal;
         text-transform: map-get($map: $standar, $key:transform-standar );
 
         .doceCuotas {
             text-align: map-get($map: $standar, $key:align-standar ); 
 
-            img{
-                width: 50px;
+            .material-symbols-outlined{
+                font-size: 3rem;
             } 
             h3{
                 font-size: 1rem;
             }
-       
         }
 
         .pagSegura {
@@ -154,9 +153,8 @@ main{
             h3{
                 font-size: 1rem;
             }
-    
-            img{
-                width: 50px;
+            .material-symbols-outlined{
+                font-size: 3rem;
             } 
         }
 
@@ -166,9 +164,9 @@ main{
                 font-size: 1rem;
             }
     
-            img{
-                width: 50px;
-            }
+            .material-symbols-outlined{
+                font-size: 3rem;
+            } 
         }
 
         .envioCamion {
@@ -177,9 +175,9 @@ main{
                 font-size: 1rem;
             }
     
-            img{
-                width: 50px;
-            }
+            .material-symbols-outlined{
+                font-size: 3rem;
+            } 
         } 
     }
 }
@@ -354,7 +352,7 @@ section{
     .seccionesProd{
         margin-left: 80px;
         margin-right: 80px;
-        margin-top: 150px;
+        margin-top: 80px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -531,8 +529,7 @@ section{
     }
 
     .navbar-expand{
-        @include flex;
-        margin-left: -180px;  
+        @include flex;  
     }
 
     main{
@@ -542,33 +539,33 @@ section{
             margin-left: 60px;
             margin-right: 60px;
             .doceCuotas{
-                img{
-                    width: 4rem;
-                }
+                .material-symbols-outlined{
+                    font-size: 4rem;
+                } 
                 h3{
                     display: none;
                 }
             }
             .pagSegura{
-                img{
-                    width: 4rem;
-                }
+                .material-symbols-outlined{
+                    font-size: 4rem;
+                } 
                 h3{
                     display: none;
                 }
             }
             .pickUp{
-                img{
-                    width: 4rem;
-                }
+                .material-symbols-outlined{
+                    font-size: 4rem;
+                } 
                 h3{
                     display: none;
                 }
             }
             .envioCamion{
-                img{
-                    width: 4rem;
-                }
+                .material-symbols-outlined{
+                    font-size: 4rem;
+                } 
                 h3{
                     display: none;
                 }
@@ -878,5 +875,57 @@ section{
     }
 }
 
+@media only screen and (max-width: 480px){
+   
+
+    header{
+        .encabezadoLogo{
+            .inputBuscar{
+                margin: 0rem 2.05rem;
+            }
+            
+        }
+    }
+
+    .navbar-expand{
+        .menuNav{
+            .voleNav{
+                .navbar-nav{
+                    .nav-item{
+                        font-size: 11px;
+
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        .beneVole{
+            margin-bottom: 50px;
+        }
+    }
+
+    .mainMayo{
+        .mainMayorista{
+            h2{
+                font-size: 20px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+
+    section{
+        .seccionesProd{
+            margin-top: 80px;
+        }
+
+    }
 
 
+
+
+
+}

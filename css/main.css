@@ -90,34 +90,34 @@ main {
   main .beneVole {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     color: #C1B0A0;
     text-transform: uppercase; }
     main .beneVole .doceCuotas {
       text-align: center; }
-      main .beneVole .doceCuotas img {
-        width: 50px; }
+      main .beneVole .doceCuotas .material-symbols-outlined {
+        font-size: 3rem; }
       main .beneVole .doceCuotas h3 {
         font-size: 1rem; }
     main .beneVole .pagSegura {
       text-align: center; }
       main .beneVole .pagSegura h3 {
         font-size: 1rem; }
-      main .beneVole .pagSegura img {
-        width: 50px; }
+      main .beneVole .pagSegura .material-symbols-outlined {
+        font-size: 3rem; }
     main .beneVole .pickUp {
       text-align: center; }
       main .beneVole .pickUp h3 {
         font-size: 1rem; }
-      main .beneVole .pickUp img {
-        width: 50px; }
+      main .beneVole .pickUp .material-symbols-outlined {
+        font-size: 3rem; }
     main .beneVole .envioCamion {
       text-align: center; }
       main .beneVole .envioCamion h3 {
         font-size: 1rem; }
-      main .beneVole .envioCamion img {
-        width: 50px; }
+      main .beneVole .envioCamion .material-symbols-outlined {
+        font-size: 3rem; }
 
 /*main de productos*/
 .mainProd {
@@ -210,7 +210,7 @@ main {
 section .seccionesProd {
   margin-left: 80px;
   margin-right: 80px;
-  margin-top: 150px;
+  margin-top: 80px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -332,28 +332,27 @@ section .destacadoVole .prodDestacado {
     display: flex;
     justify-content: center;
     justify-items: center;
-    align-items: center;
-    margin-left: -180px; }
+    align-items: center; }
   main {
     margin-left: 0px;
     margin-right: 0px; }
     main .beneVole {
       margin-left: 60px;
       margin-right: 60px; }
-      main .beneVole .doceCuotas img {
-        width: 4rem; }
+      main .beneVole .doceCuotas .material-symbols-outlined {
+        font-size: 4rem; }
       main .beneVole .doceCuotas h3 {
         display: none; }
-      main .beneVole .pagSegura img {
-        width: 4rem; }
+      main .beneVole .pagSegura .material-symbols-outlined {
+        font-size: 4rem; }
       main .beneVole .pagSegura h3 {
         display: none; }
-      main .beneVole .pickUp img {
-        width: 4rem; }
+      main .beneVole .pickUp .material-symbols-outlined {
+        font-size: 4rem; }
       main .beneVole .pickUp h3 {
         display: none; }
-      main .beneVole .envioCamion img {
-        width: 4rem; }
+      main .beneVole .envioCamion .material-symbols-outlined {
+        font-size: 4rem; }
       main .beneVole .envioCamion h3 {
         display: none; }
   section {
@@ -510,3 +509,17 @@ section .destacadoVole .prodDestacado {
       width: 30px; }
     .footerVole div .navRedes div h3 {
       font-size: 15px; } }
+
+@media only screen and (max-width: 480px) {
+  header .encabezadoLogo .inputBuscar {
+    margin: 0rem 2.05rem; }
+  .navbar-expand .menuNav .voleNav .navbar-nav .nav-item {
+    font-size: 11px; }
+  main .beneVole {
+    margin-bottom: 50px; }
+  .mainMayo .mainMayorista h2 {
+    font-size: 20px; }
+  .mainMayo .mainMayorista p {
+    font-size: 15px; }
+  section .seccionesProd {
+    margin-top: 80px; } }
