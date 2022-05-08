@@ -38,7 +38,7 @@ header .encabezadoLogo {
   grid-template-columns: 0.5fr 2fr 0.5fr;
   grid-template-areas: "inputBuscar imgLogo sesion"; }
   header .encabezadoLogo .inputBuscar {
-    color: #C4C4C4;
+    color: black;
     display: inline-block;
     grid-area: inputBuscar;
     border-bottom: 1px solid black; }
@@ -69,7 +69,7 @@ header .encabezadoLogo {
       font-size: 10px;
       text-transform: uppercase;
       margin-left: 5px; }
-    header .encabezadoLogo .sesion img {
+    header .encabezadoLogo .sesion .material-symbols-outlined {
       margin-left: 6px; }
 
 /*menu */
@@ -253,10 +253,12 @@ section .destacadoVole h4 {
 section .destacadoVole .prodDestacado {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 60px 80px; }
   section .destacadoVole .prodDestacado div {
     border: 1px solid #C1B0A0;
-    box-shadow: 0px 5px 10px grey; }
+    box-shadow: 0px 5px 10px grey;
+    margin-top: 50px; }
     section .destacadoVole .prodDestacado div img {
       height: 350px;
       transition: 1s; }
@@ -520,7 +522,7 @@ section .destacadoVole .prodDestacado {
   header .encabezadoLogo .inputBuscar {
     margin: 0rem 2.05rem; }
   .navbar-expand .menuNav .voleNav .navbar-nav .nav-item {
-    font-size: 11px; }
+    font-size: 10px; }
   main .beneVole {
     margin-bottom: 50px; }
   .mainMayo .mainMayorista h3 {
