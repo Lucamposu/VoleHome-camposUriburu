@@ -121,11 +121,12 @@ main {
 
 /*main de productos*/
 .mainProd {
-  height: 2500px; }
+  height: 100%; }
   .mainProd .prodPortada img {
     width: 100%; }
   .mainProd .productosVole {
     margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; }
@@ -134,7 +135,7 @@ main {
       transition: 1s; }
       .mainProd .productosVole img:hover {
         transform: scale(1.02); }
-    .mainProd .productosVole h2 {
+    .mainProd .productosVole h3 {
       margin-top: 10px;
       margin-bottom: 10px;
       text-align: center;
@@ -142,7 +143,7 @@ main {
       color: #C1B0A0;
       text-transform: uppercase;
       transition: 1s; }
-      .mainProd .productosVole h2:hover {
+      .mainProd .productosVole h3:hover {
         transform: scale(1.05); }
     .mainProd .productosVole div {
       border: 1px solid #C1B0A0;
@@ -153,7 +154,7 @@ main {
 .mainNosotros img {
   width: 100%; }
 
-.mainNosotros h2 {
+.mainNosotros h3 {
   margin-top: 100px;
   color: #C1B0A0;
   font-size: 25px; }
@@ -169,31 +170,39 @@ main {
 .mainContacto img {
   width: 100%; }
 
-.mainContacto .contactoForm .nombreContact {
-  margin-top: 150px; }
-  .mainContacto .contactoForm .nombreContact input {
-    width: 400px;
-    height: 30px;
+.mainContacto .contactoForm {
+  text-align: center; }
+  .mainContacto .contactoForm .nombreContact {
+    margin-top: 150px; }
+    .mainContacto .contactoForm .nombreContact input {
+      width: 400px;
+      height: 30px;
+      background-color: #C1B0A0;
+      margin: auto; }
+  .mainContacto .contactoForm .apellidoContact input {
+    margin: auto; }
+  .mainContacto .contactoForm .telefonoContact input {
+    margin: auto; }
+  .mainContacto .contactoForm .emailContact input {
+    margin: auto; }
+  .mainContacto .contactoForm .mensajeContact {
+    margin-top: 20px; }
+    .mainContacto .contactoForm .mensajeContact textarea {
+      width: 400px;
+      background-color: #C1B0A0;
+      margin: auto; }
+  .mainContacto .contactoForm .enviarContact {
+    color: white;
+    margin-bottom: 200px;
+    font-size: 15px;
+    text-transform: uppercase;
     background-color: #C1B0A0; }
-
-.mainContacto .contactoForm .mensajeContact {
-  margin-top: 20px; }
-  .mainContacto .contactoForm .mensajeContact textarea {
-    width: 400px;
-    background-color: #C1B0A0; }
-
-.mainContacto .contactoForm .enviarContact {
-  color: white;
-  margin-bottom: 200px;
-  font-size: 15px;
-  text-transform: uppercase;
-  background-color: #C1B0A0; }
 
 /*main mayorista*/
 .mainMayo img {
   width: 100%; }
 
-.mainMayo .mainMayorista h2 {
+.mainMayo .mainMayorista h3 {
   margin-top: 100px;
   color: #C1B0A0;
   font-size: 25px; }
@@ -234,7 +243,7 @@ section .seccionesProd {
     section .seccionesProd .cestos:hover {
       transform: scale(1.02); }
 
-section .destacadoVole h3 {
+section .destacadoVole h4 {
   margin-top: 150px;
   text-align: center;
   text-transform: uppercase;
@@ -253,7 +262,7 @@ section .destacadoVole .prodDestacado {
       transition: 1s; }
       section .destacadoVole .prodDestacado div img:hover {
         transform: scale(1.02); }
-    section .destacadoVole .prodDestacado div h2 {
+    section .destacadoVole .prodDestacado div h5 {
       margin-top: 10px;
       margin-bottom: 10px;
       text-align: center;
@@ -261,7 +270,7 @@ section .destacadoVole .prodDestacado {
       color: #C1B0A0;
       text-transform: uppercase; }
 
-.mensajeFin {
+.mensajeFin h6 {
   font-size: 20px;
   color: #C1B0A0;
   text-align: center;
@@ -273,9 +282,10 @@ section .destacadoVole .prodDestacado {
   padding-top: 25px;
   background-color: #C1B0A0;
   color: white;
+  position: absolute;
   height: 200px;
   margin: 0px; }
-  .footerVole div .navFooter h2 {
+  .footerVole div .navFooter h6 {
     text-transform: uppercase;
     font-size: 16px; }
   .footerVole div .navFooter ul {
@@ -287,7 +297,7 @@ section .destacadoVole .prodDestacado {
         text-decoration: none;
         text-transform: uppercase;
         color: white; }
-  .footerVole div .navContac h2 {
+  .footerVole div .navContac h6 {
     text-transform: uppercase;
     font-size: 16px; }
   .footerVole div .navContac ul {
@@ -302,10 +312,10 @@ section .destacadoVole .prodDestacado {
       height: 25px; }
   .footerVole div .navRedes {
     padding-right: 0px; }
-    .footerVole div .navRedes h2 {
+    .footerVole div .navRedes h6 {
       text-transform: uppercase;
       font-size: 16px; }
-    .footerVole div .navRedes div h3 {
+    .footerVole div .navRedes div h6 {
       margin-top: 25px;
       text-transform: uppercase;
       font-size: 16px; }
@@ -362,7 +372,7 @@ section .destacadoVole .prodDestacado {
       margin-left: 0px;
       margin-right: 0px;
       row-gap: 15px; }
-    section .destacadoVole h3 {
+    section .destacadoVole h4 {
       font-size: 35px; }
     section .destacadoVole .prodDestacado {
       display: flex;
@@ -376,7 +386,7 @@ section .destacadoVole .prodDestacado {
         section .destacadoVole .prodDestacado div img {
           height: 500px; }
   .mainProd {
-    height: 4500px; }
+    height: 100%; }
     .mainProd .prodPortada img {
       height: 150px;
       object-fit: cover; }
@@ -385,7 +395,7 @@ section .destacadoVole .prodDestacado {
   .mainNosotros img {
     height: 150px;
     object-fit: cover; }
-  .mainNosotros h2 {
+  .mainNosotros h3 {
     margin-left: 30px;
     margin-right: 30px; }
   .mainNosotros p {
@@ -394,33 +404,31 @@ section .destacadoVole .prodDestacado {
   .mainContacto img {
     height: 150px;
     object-fit: cover; }
-  .mainContacto .contactoForm {
-    margin-left: 30px; }
   .mainMayo img {
     height: 150px;
     object-fit: cover; }
-  .mainMayo .mainMayorista h2 {
+  .mainMayo .mainMayorista h3 {
     margin-left: 25px; }
   .mainMayo .mainMayorista p {
     margin-left: 25px; }
   .footerVole {
     margin-left: 0px;
     margin-right: 0px; }
-    .footerVole div .navFooter h2 {
+    .footerVole div .navFooter h6 {
       font-size: 15px;
       margin-left: 10px; }
     .footerVole div .navFooter ul {
       font-size: 10px;
       margin-left: 10px; }
-    .footerVole div .navContac h2 {
+    .footerVole div .navContac h6 {
       font-size: 15px; }
     .footerVole div .navContac ul li {
       font-size: 10px; }
-    .footerVole div .navRedes h2 {
+    .footerVole div .navRedes h6 {
       font-size: 15px; }
     .footerVole div .navRedes div img {
       width: 30px; }
-    .footerVole div .navRedes div h3 {
+    .footerVole div .navRedes div h6 {
       font-size: 15px; } }
 
 @media only screen and (max-width: 600px) {
@@ -456,7 +464,7 @@ section .destacadoVole .prodDestacado {
       flex-flow: row wrap; }
       section .seccionesProd img {
         width: 100%; }
-    section .destacadoVole h3 {
+    section .destacadoVole h4 {
       font-size: 30px; }
     section .destacadoVole .prodDestacado {
       display: flex;
@@ -471,43 +479,41 @@ section .destacadoVole .prodDestacado {
   .mensajeFin {
     margin-left: 0px;
     margin-right: 0px; }
-    .mensajeFin h3 {
+    .mensajeFin h6 {
       font-size: 20px; }
   .mainProd {
-    height: 5000px; }
+    height: 100%; }
     .mainProd .prodPortada img {
       height: 150px;
       object-fit: cover; }
   .mainNosotros img {
     height: 150px;
     object-fit: cover; }
-  .mainNosotros h2 {
+  .mainNosotros h3 {
     margin-left: 30px; }
   .mainNosotros p {
     margin-left: 30px; }
   .mainContacto img {
     height: 150px;
     object-fit: cover; }
-  .mainContacto .contactoForm {
-    margin-left: 80px; }
   .footerVole {
     margin-left: 0px;
     margin-right: 0px; }
-    .footerVole div .navFooter h2 {
+    .footerVole div .navFooter h6 {
       font-size: 15px;
       margin-left: 10px; }
     .footerVole div .navFooter ul {
       font-size: 15px;
       margin-left: 10px; }
-    .footerVole div .navContac h2 {
+    .footerVole div .navContac h6 {
       font-size: 15px; }
     .footerVole div .navContac ul li {
       font-size: 9px; }
-    .footerVole div .navRedes h2 {
+    .footerVole div .navRedes h6 {
       font-size: 15px; }
     .footerVole div .navRedes div img {
       width: 30px; }
-    .footerVole div .navRedes div h3 {
+    .footerVole div .navRedes div h6 {
       font-size: 15px; } }
 
 @media only screen and (max-width: 480px) {
@@ -517,7 +523,7 @@ section .destacadoVole .prodDestacado {
     font-size: 11px; }
   main .beneVole {
     margin-bottom: 50px; }
-  .mainMayo .mainMayorista h2 {
+  .mainMayo .mainMayorista h3 {
     font-size: 20px; }
   .mainMayo .mainMayorista p {
     font-size: 15px; }
