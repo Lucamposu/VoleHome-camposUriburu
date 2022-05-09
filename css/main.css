@@ -155,7 +155,7 @@ main {
   width: 100%; }
 
 .mainNosotros h3 {
-  margin-top: 100px;
+  margin-top: 70px;
   color: #C1B0A0;
   font-size: 25px; }
 
@@ -173,7 +173,7 @@ main {
 .mainContacto .contactoForm {
   text-align: center; }
   .mainContacto .contactoForm .nombreContact {
-    margin-top: 150px; }
+    margin-top: 100px; }
     .mainContacto .contactoForm .nombreContact input {
       width: 400px;
       height: 30px;
@@ -203,7 +203,7 @@ main {
   width: 100%; }
 
 .mainMayo .mainMayorista h3 {
-  margin-top: 100px;
+  margin-top: 70px;
   color: #C1B0A0;
   font-size: 25px; }
 
@@ -444,6 +444,8 @@ section .destacadoVole .prodDestacado {
       display: none; }
   .navbar-expand .menuNav .voleNav .navbar-nav .nav-item {
     font-size: 12px; }
+    .navbar-expand .menuNav .voleNav .navbar-nav .nav-item .dropdown-menu li {
+      font-size: 12px; }
   main {
     margin-left: 0px;
     margin-right: 0px; }
@@ -523,6 +525,8 @@ section .destacadoVole .prodDestacado {
     margin: 0rem 2.05rem; }
   .navbar-expand .menuNav .voleNav .navbar-nav .nav-item {
     font-size: 10px; }
+    .navbar-expand .menuNav .voleNav .navbar-nav .nav-item .dropdown-menu li {
+      font-size: 10px; }
   main .beneVole {
     margin-bottom: 50px; }
   .mainMayo .mainMayorista h3 {
@@ -530,4 +534,6 @@ section .destacadoVole .prodDestacado {
   .mainMayo .mainMayorista p {
     font-size: 15px; }
   section .seccionesProd {
-    margin-top: 80px; } }
+    margin-top: 80px; }
+  .mensajeFin h6 {
+    font-size: 15px; } }
